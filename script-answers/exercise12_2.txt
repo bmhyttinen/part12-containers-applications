@@ -1,0 +1,32 @@
+Script started on Wed Jan 26 16:37:11 2022
+Restored session: Wed Jan 26 16:36:04 EET 2022
+complete:13: command not found: compdef
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications[0m[27m[24m[Jborishyttinen@Boriss-Air part12-containers-applications % [K[?2004h[7mdocker run -it ubuntu [7mb[7mash[27m[K[A[54C[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m b[27ma[27ms[27mh[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K5f3d23ccb99f: Pulling fs layer [1B[1A[2K5f3d23ccb99f: Downloading  273.6kB/27.17MB[1B[1A[2K5f3d23ccb99f: Downloading   3.91MB/27.17MB[1B[1A[2K5f3d23ccb99f: Downloading  8.379MB/27.17MB[1B[1A[2K5f3d23ccb99f: Downloading  12.86MB/27.17MB[1B[1A[2K5f3d23ccb99f: Downloading  16.23MB/27.17MB[1B[1A[2K5f3d23ccb99f: Downloading  18.76MB/27.17MB[1B[1A[2K5f3d23ccb99f: Downloading  24.64MB/27.17MB[1B[1A[2K5f3d23ccb99f: Verifying Checksum [1B[1A[2K5f3d23ccb99f: Download complete [1B[1A[2K5f3d23ccb99f: Extracting  294.9kB/27.17MB[1B[1A[2K5f3d23ccb99f: Extracting  4.424MB/27.17MB[1B[1A[2K5f3d23ccb99f: Extracting  8.552MB/27.17MB[1B[1A[2K5f3d23ccb99f: Extracting  12.98MB/27.17MB[1B[1A[2K5f3d23ccb99f: Extracting  17.69MB/27.17MB[1B[1A[2K5f3d23ccb99f: Extracting  21.82MB/27.17MB[1B[1A[2K5f3d23ccb99f: Extracting  25.66MB/27.17MB[1B[1A[2K5f3d23ccb99f: Extracting  27.17MB/27.17MB[1B[1A[2K5f3d23ccb99f: Pull complete [1BDigest: sha256:b5a61709a9a44284d88fb12e5c48db0409cfad5b69d4ff8224077c57302df9cf
+Status: Downloaded newer image for ubuntu:latest
+]0;root@50a861fd8d28: /root@50a861fd8d28:/# [K]0;root@50a861fd8d28: /root@50a861fd8d28:/# mkdir     ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;34mmedia[0m  [01;34mopt[0m   [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmnt[0m    [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m   [30;42mtmp[0m  [01;34mvar[0m
+]0;root@50a861fd8d28: /root@50a861fd8d28:/# cd usr
+]0;root@50a861fd8d28: /usrroot@50a861fd8d28:/usr# ls
+[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+]0;root@50a861fd8d28: /usrroot@50a861fd8d28:/usr# cd src
+]0;root@50a861fd8d28: /usr/srcroot@50a861fd8d28:/usr/src# ls
+]0;root@50a861fd8d28: /usr/srcroot@50a861fd8d28:/usr/src# mkdir app
+]0;root@50a861fd8d28: /usr/srcroot@50a861fd8d28:/usr/src# ls
+[0m[01;34mapp[0m
+]0;root@50a861fd8d28: /usr/srcroot@50a861fd8d28:/usr/src# cd app
+]0;root@50a861fd8d28: /usr/src/approot@50a861fd8d28:/usr/src/app# touch index.js
+]0;root@50a861fd8d28: /usr/src/approot@50a861fd8d28:/usr/src/app# ls
+index.js
+]0;root@50a861fd8d28: /usr/src/approot@50a861fd8d28:/usr/src/app# exit
+exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications[0m[27m[24m[Jborishyttinen@Boriss-Air part12-containers-applications % [K[?2004heexit  e  eexit[?2004l
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Wed Jan 26 16:38:58 2022
