@@ -1,0 +1,262 @@
+Script started on Wed Feb  2 16:29:21 2022
+complete:13: command not found: compdef
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hddocker exec -ittodo-      todo-backend-mongo_1[?2004l
+
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hdocker exec -it todo-backend-mongo_1 bash[?2004l
+
+Error: No such container: todo-backend-mongo_1
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hdocker exec -it todo-backend-mongo_1 bash[P[12C [13D_mongo_1 bash[12D[?2004l
+
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a76d68c8-d2a3-4077-8c82-9ac9dbb0ba64") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+> show dbs[3G[Jshow dbs[11G
+> use [3G[Juse[6G[3G[Jus[5G[3G[Ju[4G[3G[J[3G[3G[J[3G^C
+bye
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# mongo -u root -p example
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a0deb25d-b472-485e-bd1d-016b26192913") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show colletions[3G[Jshow colletions[18G
+uncaught exception: Error: don't know how to show [colletions] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> sh[3G[Js[4G[3G[J[3Gdb.todos.find([[3G[Jdb.todos.find([17G[¨{[3G[Jdb.todos.find([¨[19G[3G[Jdb.todos.find([[18G{})[3G[Jdb.todos.find([1;34m[[0m{})[20G[3G[Jdb.todos.find([[1;34m{[0m})[19G[3G[Jdb.todos.find([{[1;34m}[0m)[18G[3G[Jdb.todos.find({[1;34m}[0m)[17G[3G[Jdb.todos.find([1;34m{[0m})[18G[3G[Jdb.todos.find[1;34m([0m{})[19G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("61f96cbea831e3ceba56a1ae"), "text" : "testing", "done" : false }
+{ "_id" : ObjectId("61f96cbea831e3ceba56a1af"), "text" : "Learn about containers", "done" : false }
+> show collections[3G[Jshow collections[19G
+todos
+> db.todos.insetOne[3G[Jdb.todos.insetOn[19G[3G[Jdb.todos.insetO[18G[3G[Jdb.todos.inset[17G[3G[Jdb.todos.inse[16G[3G[Jdb.todos.ins[15Gr[3G[Jdb.todos.ins[15GertOne({done: false, [3G[Jdb.todos.insertOne({done: false,[35G[3G[Jdb.todos.insertOne({done: false[34G[3G[Jdb.todos.insertOne({done: fals[33G[3G[Jdb.todos.insertOne({done: fal[32G[3G[Jdb.todos.insertOne({done: fa[31G[3G[Jdb.todos.insertOne({done: f[30G[3G[Jdb.todos.insertOne({done: [29G[3G[Jdb.todos.insertOne({done:[28G[3G[Jdb.todos.insertOne({done[27G[3G[Jdb.todos.insertOne({don[26G[3G[Jdb.todos.insertOne({do[25G[3G[Jdb.todos.insertOne({d[24G[3G[Jdb.todos.insertOne({[23Gdone. [3G[Jdb.todos.insertOne({done.[28G[3G[Jdb.todos.insertOne({done[27G[3G[Jdb.todos.insertOne({don[26G[3G[Jdb.todos.insertOne({do[25G[3G[Jdb.todos.insertOne({d[24G[3G[Jdb.todos.insertOne({[23G"text":"Increase the number if [3G[Jdb.todos.insertOne({"text":"Increase the number if[53G[3G[Jdb.todos.insertOne({"text":"Increase the number i[52G[3G[Jdb.todos.insertOne({"text":"Increase the number [51G[3G[Jdb.todos.insertOne({"text":"Increase the number[50Gof t[3G[Jdb.todos.insertOne({"text":"Increase the numberof [53G[3G[Jdb.todos.insertOne({"text":"Increase the numberof[52G[3G[Jdb.todos.insertOne({"text":"Increase the numbero[51G[3G[Jdb.todos.insertOne({"text":"Increase the number[50G of tools in my toolbelt", "done":false})[3G[Jdb.todos.insertOne({"text":"Increase the number of tools in my toolbelt", "done":false})[91G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("61fa96769ee206ae5f2dfabd")
+}
+> [3G[Jdb.todos.insertOne({"text":"Increase the number of tools in my toolbelt", "done":false})[91G[3G[Jshow collections[19G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("61f96cbea831e3ceba56a1ae"), "text" : "testing", "done" : false }
+{ "_id" : ObjectId("61f96cbea831e3ceba56a1af"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("61fa96769ee206ae5f2dfabd"), "text" : "Increase the number of tools in my toolbelt", "done" : false }
+> [3G[J[3G^C
+bye
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# ^C
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# ^C
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# commit     onmta      exit
+exit
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hccontainer diff[?2004l
+
+zsh: command not found: container
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hddocke  ker conatiner      tainer ls[?2004l
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                     NAMES
+2a00779c2e0c   mongo     "docker-entrypoint.s…"   8 minutes ago   Up 8 minutes   0.0.0.0:3456->27017/tcp   todo-backend_mongo_1
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hdocker container ls[19Dc[7P[9Cdiff     [14Ddocker exec -it todo-backend_mongo_1 bash[13D-[12C    [29Drun -p 3000:3000 todo-server [11D.          [10D[18Dbuild -t todo-server .[29Dnpm start                    [20Dinstallstart  [9Ddocker build -t todo-server .[22Drun -p 3000:3000 .    todo-server[28Dexec -it todo-backend-mongo_1 bash     bash[13D_[12C[?2004l
+
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# d container diff
+bash: container: command not found
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# ^C
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# docker attach 2a00779c2e0c
+bash: docker: command not found
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# [K^C
+]0;root@2a00779c2e0c: /root@2a00779c2e0c:/# exit
+exit
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hdocker exec -it todo-backend_mongo_1 bash[34Dcontainer ls                      [22D[12Dexec -it todo-backend_mongo_1 bash[41D                                         [41Dddocker attach 2a00779c2e0c[?2004l
+
+do  docker      ^C{"t":{"$date":"2022-02-02T14:41:05.406+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":2,"error":"Interrupt"}}
+{"t":{"$date":"2022-02-02T14:41:05.406+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+{"t":{"$date":"2022-02-02T14:41:05.406+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+{"t":{"$date":"2022-02-02T14:41:05.406+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+{"t":{"$date":"2022-02-02T14:41:05.407+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+{"t":{"$date":"2022-02-02T14:41:05.407+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+{"t":{"$date":"2022-02-02T14:41:05.407+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+{"t":{"$date":"2022-02-02T14:41:05.407+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+{"t":{"$date":"2022-02-02T14:41:05.408+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+{"t":{"$date":"2022-02-02T14:41:05.408+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":4}}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.409+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+{"t":{"$date":"2022-02-02T14:41:05.410+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.410+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+{"t":{"$date":"2022-02-02T14:41:05.410+00:00"},"s":"I",  "c":"REPL",     "id":4784916, "ctx":"SignalHandler","msg":"Reacquiring the ReplicationStateTransitionLock for shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.410+00:00"},"s":"I",  "c":"REPL",     "id":4784917, "ctx":"SignalHandler","msg":"Attempting to mark clean shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.410+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+{"t":{"$date":"2022-02-02T14:41:05.410+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+{"t":{"$date":"2022-02-02T14:41:05.412+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+{"t":{"$date":"2022-02-02T14:41:05.412+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+{"t":{"$date":"2022-02-02T14:41:05.412+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+{"t":{"$date":"2022-02-02T14:41:05.413+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+{"t":{"$date":"2022-02-02T14:41:05.416+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+{"t":{"$date":"2022-02-02T14:41:05.417+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+{"t":{"$date":"2022-02-02T14:41:05.417+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+{"t":{"$date":"2022-02-02T14:41:05.417+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+{"t":{"$date":"2022-02-02T14:41:05.417+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+{"t":{"$date":"2022-02-02T14:41:05.417+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+{"t":{"$date":"2022-02-02T14:41:05.417+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+{"t":{"$date":"2022-02-02T14:41:05.418+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+{"t":{"$date":"2022-02-02T14:41:05.419+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"SignalHandler","msg":"WiredTiger message","attr":{"message":"[1643812865:419756][1:0xffff89f67d00], close_ckpt: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 48, snapshot max: 48 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 137"}}
+{"t":{"$date":"2022-02-02T14:41:05.435+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"172.23.0.1:64500","uuid":"ee5d205d-48ce-45d9-b60a-1d7c05eed22c","connectionId":3,"connectionCount":2}}
+{"t":{"$date":"2022-02-02T14:41:05.523+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":105}}
+{"t":{"$date":"2022-02-02T14:41:05.523+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+{"t":{"$date":"2022-02-02T14:41:05.526+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+{"t":{"$date":"2022-02-02T14:41:05.526+00:00"},"s":"I",  "c":"FTDC",     "id":4784926, "ctx":"SignalHandler","msg":"Shutting down full-time data capture"}
+{"t":{"$date":"2022-02-02T14:41:05.526+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+{"t":{"$date":"2022-02-02T14:41:05.535+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+{"t":{"$date":"2022-02-02T14:41:05.536+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hddocker ontain      container ls[?2004l
+
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004hddocke   d  docker container ls[12Dattach 2a00779c2e0c[19Dexec -it todo-backend_mongo_1 bash[34Dcontainer ls                      [22D[19Dc[7P[9Cdiff     [14Ddocker exec -it todo-backend_mongo_1 bash[13D-[12C    [29Drun -p 3000:3000 todo-server [11D.          [10Dtodo-server[28Dexec -it todo-backend-mongo_1 bash[13D_[12C[41Dcontainer diff                           [27D[14Ddocker container ls[12Dexec -it todo-backend_mongo_1 bash[34Dattach 2a00779c2e0c               [15D[19Dcontainer ls       [19D                   [19Ddocker container ls[12Dattach 2a00779c2e0c[19Dexec -it todo-backend_mongo_1 bash[34Dattach 2a00779c2e0c               [15D[19Dcontainer ls       [19D                   [19Ddocker container ls[12Dattach 2a00779c2e0c[19Dexec -it todo-backend_mongo_1 bash[34Dcontainer ls                      [22D[19Dc[7P[9Cdiff     [14Ddocker exec -it todo-backend_mongo_1 bash[13D-[12C    [29Drun -p 3000:3000 todo-server [11D.          [10D[18Dbuild -t todo-server .[29Dnpm start                    [20Dinstall[11Dcd todo-backendapp    [11Dgit push origin main[16Dcommit -m "Exercises 3 and 4"[29Dadd .                        [24Dstatus[10Dscript    docker container ls -a[22Dscript                [16Dgit statusadd . commit -m "Exercises 3 and 4"[29Dpush origin main             [13D[20Dcd todo-app         [9Dbackend[15Dnpm install    start  [9Ddocker build -t todo-server .[22Drun -p 3000:3000 .    todo-server[28Dexec -it todo-backend-mongo_1 bash[13D_[12C[41Dcontainer diff                           [27D[14Ddocker container ls[12Dexec -it todo-backend_mongo_1 bash[34Dattach 2a00779c2e0c               [15D[19Dcontainer ls       [19D                   [19Dddocker-container        mpose -f coer    docker-compose.de.v  v.ymö  l up[?2004l
+
+Starting todo-backend_mongo_1 ... 
+
+[1A[2K
+Starting todo-backend_mongo_1 ... [32mdone[0m
+[1BAttaching to todo-backend_mongo_1
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.547+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"-","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":13},"outgoing":{"minWireVersion":0,"maxWireVersion":13},"isInternalClient":true}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.548+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.548+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.549+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.551+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.551+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","ns":"config.tenantMigrationDonors"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.551+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","ns":"config.tenantMigrationRecipients"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.551+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.552+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"2a00779c2e0c"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.552+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"5.0.6","gitVersion":"212a8dbb47f07427dae194a9c75baec1d81d9259","openSSLVersion":"OpenSSL 1.1.1f  31 Mar 2020","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2004","distarch":"aarch64","target_arch":"aarch64"}}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.552+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"20.04"}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.552+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"},"security":{"authorization":"enabled"}}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.559+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:08.564+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=482M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress,compact_progress],"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:09.300+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812929:300315][1:0xffffa11ad980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 4 through 5"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:12.498+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812932:498151][1:0xffffa11ad980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 5 through 5"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.563+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812935:563563][1:0xffffa11ad980], txn-recover: [WT_VERB_RECOVERY_ALL] Main recovery loop: starting at 4/23808 to 5/256"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.643+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812935:643933][1:0xffffa11ad980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 4 through 5"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.698+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812935:698644][1:0xffffa11ad980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 5 through 5"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.719+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812935:719680][1:0xffffa11ad980], txn-recover: [WT_VERB_RECOVERY_ALL] Set global recovery timestamp: (0, 0)"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.719+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812935:719754][1:0xffffa11ad980], txn-recover: [WT_VERB_RECOVERY_ALL] Set global oldest timestamp: (0, 0)"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.730+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1643812935:730436][1:0xffffa11ad980], WT_SESSION.checkpoint: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 1, snapshot max: 1 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 181"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.749+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":7185}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.749+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.753+00:00"},"s":"I",  "c":"STORAGE",  "id":4366408, "ctx":"initandlisten","msg":"No table logging settings modifications are required for existing WiredTiger tables","attr":{"loggingEnabled":true}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.780+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.805+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":13},"outgoing":{"minWireVersion":0,"maxWireVersion":13},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":13,"maxWireVersion":13},"outgoing":{"minWireVersion":13,"maxWireVersion":13},"isInternalClient":true}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.808+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.810+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.818+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.833+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.836+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.836+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:15.837+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:16.233+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.23.0.1:64518","uuid":"ecaefb2f-c092-412f-94f7-23dd41ab342d","connectionId":1,"connectionCount":1}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:16.234+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"172.23.0.1:64518","client":"conn1","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.6.8"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"20.6.0"},"platform":"'Node.js v14.18.1, LE (unified)","version":"3.6.8|5.13.2"}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:16.239+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.23.0.1:64520","uuid":"6712d490-4f1c-4efc-a7ff-a2c19273298f","connectionId":2,"connectionCount":2}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:16.242+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"172.23.0.1:64520","client":"conn2","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.6.8"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"20.6.0"},"platform":"'Node.js v14.18.1, LE (unified)","version":"3.6.8|5.13.2"}}}
+[36mmongo_1  |[0m {"t":{"$date":"2022-02-02T14:42:16.258+00:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn2","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"the_username","authenticationDatabase":"the_database","remote":"172.23.0.1:64520","extraInfo":{}}}
+^C[31mERROR[0m: Aborting.
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004h[?2004l
+
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004h[?2004l
+
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004h[?2004l
+
+[1m[7m%[27m[1m[0m                                                                                                   
+ 
+]7;file://Boriss-Air/Users/borishyttinen/school/fullstack/part12-containers-applications/todo-app/todo-backend
+[0m[27m[24m[Jborishyttinen@Boriss-Air todo-backend % [K[?2004h
