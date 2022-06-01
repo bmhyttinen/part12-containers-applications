@@ -53,11 +53,11 @@ singleRouter.get('/', async (req, res) => {
 singleRouter.put('/', async (req, res) => {
   if (typeof req.body.done !== 'undefined') {
     req.todo.done = req.body.done;
-    req.todo.save();
+    await req.todo.save();
   }
   if (typeof req.body.text !== 'undefined') {
     req.todo.text = req.body.text;
-    req.todo.save();
+    await req.todo.save();
   }
   res.send(req.todo);
 });
