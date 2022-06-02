@@ -4,6 +4,8 @@ WORKDIR /usr/src/app
 
 COPY . .
 
+ENV PORT=80
+
 # Change npm ci to npm install since we are going to be in development mode
 RUN npm install
 
