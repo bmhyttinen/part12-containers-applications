@@ -1,0 +1,22 @@
+services:
+
+  myapp-server:
+    image: myapp-devserver
+    volumes:
+      - ./patientor-backend:/usr/src/app
+    build:
+      context: ./patientor-backend
+      dockerfile: dev.Dockerfile
+    ports:
+      - 3001:3001
+
+  myapp-frontend:
+    image: myapp-devfrontend
+    build:
+      context: ./patientor
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./patientor:/usr/src/app
+    container_name: myapp-devfrontend
+    ports:
+      - 3000:3000

@@ -1,0 +1,18 @@
+services:
+
+  myapp-server:
+    image: myapp-server
+    build:
+      context: ./patientor-backend
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+
+  myapp-frontend:
+    image: myapp-frontend
+    build:
+      context: ./patientor
+      dockerfile: Dockerfile
+    container_name: myapp-frontend
+    ports:
+      - 3000:80
